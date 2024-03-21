@@ -1,0 +1,30 @@
+﻿<Window x:Class="NodeView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NodeView"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="900">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <!-- Star-sized column (takes remaining space) -->
+            <ColumnDefinition Width="400"/>
+            <!-- Fixed-sized column -->
+        </Grid.ColumnDefinitions>
+        
+        <!-- Console output area -->
+        <TextBox Grid.Column="0" x:Name="ConsoleOutput" Margin="5" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" TextWrapping="Wrap"/>
+
+        <!-- Input area with a TextBox and a Button -->
+        <StackPanel Grid.Column="0" VerticalAlignment="Bottom" Margin="5">
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="InputTextBox" Width="400" Margin="0,0,5,0"/>
+                <Button Content="Send" Click="SendData" Width="70"/>
+            </StackPanel>
+        </StackPanel>
+        
+        
+    </Grid>
+</Window>

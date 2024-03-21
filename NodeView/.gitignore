@@ -1,0 +1,34 @@
+# Ignore Visual Studio files
+.vs/
+*.vscode/
+*.sln
+*.suo
+*.user
+*.userprefs
+*.lock.json
+_ReSharper*/
+*.bak
+
+# Ignore build output
+bin/
+obj/
+
+# Ignore NuGet packages
+packages/
+
+# Ignore build artifacts
+*.exe
+*.pdb
+*.dll
+*.zip
+*.rar
+*.7z
+
+# Ignore user-specific files
+*.suo
+*.user
+*.userprefs
+
+# Ignore logs and databases
+*.log
+*.sqlite
