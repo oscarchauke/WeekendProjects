@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "uart.h": "c",
-        "common-defines.h": "c",
-        "utils.h": "c",
-        "comms.h": "c"
-    }
-}
